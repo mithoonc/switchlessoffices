@@ -138,6 +138,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 86px;
   margin: 0 auto;
   display: inline-block;
+        transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.icon-box:hover .icon img{
+        -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 .icon-box h4{
   font-size: 22px;
@@ -202,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 .address-inner{
-  margin: 0 10%;
+  margin: 0 0;
 }
 .ip-section{
   padding-bottom: 0;
@@ -226,25 +236,28 @@ h1, h2, h3, h4, h5, h6 {
 .form-address-block .btn-theme{
   min-width: 170px;
 }
-.address-block{
-
+.address-inner{
+    position: relative;
   background-color: #46b9fc;
-  border-radius: 3px; 
-  color: #fff;
+  color: #104070;
+    padding: 40px 40px;
+    text-align: center;
 }
 .location-block{
-  padding: 25px;
+
 }
-.address-block h3 {
-
-  font-size: 25px;
-  font-weight: bold;
-  font-stretch: normal;
+.address-block .location-block h3 {
+ font-stretch: normal;
   font-style: normal;
-  line-height: 1.12;
+  line-height: 1.5;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
+  color:#104070;
+  margin-bottom: 25px;
 
+}
+.address-block .location-block p{
+    text-align: right;
 }
 .address-block p {
 
@@ -252,29 +265,51 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
-  margin-bottom: 25px;
+  text-align: center;
+  color:#104070;
+  margin-bottom: 0;
 }
 .helpdesk-block{
-  background-color: #143f6c;
-  padding:25px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0 0 3px 3px;
+    text-align: left;
+ 
 }
-.form-address-block, .address-block{
-  min-height: 505px;
-  position: relative;
+.helpdesk-block p{
+  text-align: left; 
+        margin-bottom: 23px;
+}
+ .address-block{
+    position: relative;
+    width: 625px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-sub-title h2{
+      font-size: 50px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #104070;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+    margin-bottom: 15px;
+}
+.contact-sub-title p {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #104070;
+    margin-bottom:30px;
 }
 .address-block a{
-  color: #fff;
+  color:#104070;
+    margin-left:4px;
 }
 .address-block a:hover,
 .address-block a:focus{
-  color: #fff;
+ color:#104070;
   text-decoration: none;
 }
 textarea.form-control{
@@ -903,11 +938,25 @@ section.why-section {
 }
 .icon-box {
   position: relative;
-  padding-left: 120px;
+  padding-left: 105px;
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 50px;
   min-height: inherit;
+}
+    .address-block {
+    width: 100%;
+    margin: 0 0;
+}
+    .helpdesk-block,  .helpdesk-block p {
+    text-align: center;
+    margin-bottom: 0;
+}
+    .helpdesk-block{
+        margin-bottom: 25px;
+    }
+    .address-block .location-block p {
+    text-align: center;
 }
 .why-section.two-columns-layout .column-thumbnail img,
 .ip-section.two-columns-layout .column-thumbnail img {
@@ -1086,6 +1135,19 @@ section {
   position: absolute;
   right: -50px;
   top: 0;
+}
+.address-inner.bg-pattern:after {
+    background: url(../images/blue-pattern.png) top right no-repeat;
+    background-size: cover;
+    width: 182px;
+    height: 85px;
+    content: "";
+    position: absolute;
+    left: 100px;
+    right: auto;
+    filter: grayscale(100%);
+    opacity: .3;
+    top: -93px;
 }
 .section-title {
   text-align: center;
